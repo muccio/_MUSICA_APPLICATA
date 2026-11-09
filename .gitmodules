@@ -1,0 +1,12 @@
+[submodule "PrecisionAudioLab"]
+	path = PrecisionAudioLab
+	url = https://github.com/muccio/PrecisionAudioLab.git
+[submodule "SpectraCross"]
+	path = SpectraCross
+	url = https://github.com/muccio/spectracross.git
+[submodule "UTILITY_AUDIO_DETAILS"]
+	path = UTILITY_AUDIO_DETAILS
+	url = https://github.com/muccio/StudioSpec-Pro.git
+[submodule "audioscope-source"]
+	path = audioscope-source
+	url = https://github.com/muccio/AudioScope.git
