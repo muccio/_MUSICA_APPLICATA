@@ -10,3 +10,6 @@
 [submodule "audioscope-source"]
 	path = audioscope-source
 	url = https://github.com/muccio/AudioScope.git
+[submodule "FilterLab"]
+	path = FilterLab
+	url = https://github.com/muccio/FilterLab.git

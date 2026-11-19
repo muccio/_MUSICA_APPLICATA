@@ -14,6 +14,7 @@ Ogni sottoprogetto è mantenuto in un repository GitHub indipendente collegato a
 | **SpectraCross** | Plugin AU & VST3 | C++20, JUCE 8 | [muccio/spectracross](https://github.com/muccio/spectracross) |
 | **StudioSpec Pro** | Desktop App Standalone | Python, CoreAudio HAL, PySide6 | [muccio/StudioSpec-Pro](https://github.com/muccio/StudioSpec-Pro) |
 | **AudioScope** | Desktop App Standalone | Python, PySide6, PyAV/FFmpeg | [muccio/AudioScope](https://github.com/muccio/AudioScope) |
+| **FilterLab** | Desktop App Standalone | Python, PySide6, SciPy, PortAudio | [muccio/FilterLab](https://github.com/muccio/FilterLab) |
 
 ---
 
@@ -42,6 +43,12 @@ Ogni sottoprogetto è mantenuto in un repository GitHub indipendente collegato a
 - **Virtualized Zero-Copy Hex Viewer:** Lettore esadecimale virtualizzato basato su memoria mappata (`mmap`), capace di scorrere istantaneamente file di decine di gigabyte a zero consumo di RAM, con ricerca pattern binari/ASCII.
 - **Parser Gerarchico dei Chunk:** Navigazione interattiva della struttura ad albero per RIFF (`fmt `, `bext`, `iXML`, `cart`, `data`), AIFF (`COMM`, `SSND`), metadati broadcast EBU Tech 3285 BEXT, iXML produzione cinematografica e box MPEG-4.
 - **Broadcast Loudness Suite (ITU-R BS.1770-4 / EBU R128):** Misurazione True Peak con oversampling 4x (dBTP), Loudness Range (LRA, EBU Tech 3342), LUFS integrato con doppio gating (-70 LKFS assoluto e -10 LU relativo).
+
+### 5. [FilterLab 🎛️](https://github.com/muccio/FilterLab)
+*Digital Filter & EQ Didactic Lab — Laboratorio Interattivo sui Filtri Digitali per macOS & Windows*
+- **Percorso Didattico Completo (10 Moduli + Quiz — Slide 1–18):** Spiegazione interattiva di filtri digitali come *blackbox* e campioni discreti ($\Delta t$), LowPass, HighPass, BandPass, BandReject (media geometrica $f_c = \sqrt{f_L \cdot f_H}$), Quality Factor ($Q$), *ringing* sui transienti, ordine/roll-off Butterworth (6/12/24 dB/oct), Moog Ladder, connessione in serie/parallelo, banchi modulati, EQ Grafica ISO (10/20/30 bande), Shelving/Peak/Notch/EQ Parametrico e Channel Strip (mandate Aux Pre/Post-Fader, Fader nominale, PFL, Pan-Pot).
+- **Laboratorio Pratico Real-Time (4 Workbench):** *Singolo Filtro*, *Serie/Parallelo/Banco*, *EQ Grafica ISO* ed *EQ Parametrica* con grafico Bode interattivo a nodi trascinabili, spettro FFT Pre/Post live, risposta all'impulso $h[n]$, oscilloscopio e vista campioni Blackbox.
+- **Sorgenti Interne ed Esterne:** Generatore multi-segnale (Rumore Bianco/Rosa, Impulsi, Saw/Square PolyBLEP, Sinusoide, Sweep Logaritmico, Accordo Synth), player file audio (`WAV`, `AIFF`, `FLAC`, `OGG`, `MP3`, `M4A`) con seek waveform e ingresso Microfono Live full-duplex.
 
 ---
 
@@ -74,3 +81,4 @@ git submodule update --remote --merge
 ## 📄 Licenze
 
 Ogni sottoprogetto è regolato dalla propria licenza specifica consultabile nelle rispettive cartelle e repository dedicati.
+
